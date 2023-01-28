@@ -1,0 +1,466 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: sans-serif;
+}
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+h6 {
+    color: blue;
+    text-align: center;
+    font-size: .98rem;
+}
+p {
+    color: rgb(129, 125, 125);
+    line-height: 1.7;
+    text-align: center;
+    font-size: 1rem;
+}
+section {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    /*background-color: grey;*/
+}
+.container {
+    width: 1100px;
+    /*border: 1px solid black;*/
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+.col-33 {
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+.col-25 {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+.col-50 {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.content{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 7px;
+}
+i {
+    font-size: 1.5rem;
+    color: yellow;
+}
+
+.btn {
+    padding: 10px 25px;
+    background-color: #5b98f3;
+    border: 0px;
+    border-radius: 25px;
+    font-size: .95rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+/*--header part--*/
+header {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    width: 100%;
+    position: fixed;
+    background-color: #000000b0;
+    overflow: hidden;
+    z-index: 99;
+}
+.company {
+    padding-left: 35px;
+    float: left;
+}
+.company img {
+    float: left;
+    display: block;
+	width: 64px;
+	height: 64px;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	border-radius: 2rem;
+}
+.company h2 {
+    float: right;
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 10px;
+}
+/*-- header part main manu--*/
+#main-manu{
+    padding-right: 35px;
+    float: right;
+    margin-top: 18px;
+}
+#mobile-icon{
+    display: none;
+}
+#main-manu ul{
+    list-style: none;
+}
+#main-manu ul li{
+    float: left;
+    margin: auto 1px;
+}
+#main-manu ul li a{
+    padding: 10px 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: .95rem;
+}
+#main-manu ul li a:hover {
+    background-color: black;
+    color:#5b98f3;
+}
+.active a{
+    background-color: black;
+    color:#5b98f3 !important;
+}
+
+/*-- project section --*/
+#project {
+    background-color: #f5f5f5;
+}
+#project img {
+    height: 200px;
+    width: 98%;
+}
+#project .content{
+    position: relative;
+}
+#project .overlay{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    padding: 15px;
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+    display: none;
+}
+#project .content:hover .overlay{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.76);
+}
+
+/*-- home section --*/
+#home {
+    background-image: url('../img/bgimg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 0px;
+}
+#home p{
+    text-align: left;
+    color: yellow; 
+    font-size: 1.2rem; 
+    text-transform: uppercase;
+}
+#home h6{
+    text-align: left;
+    color: white; 
+    text-transform: uppercase; 
+    font-size: 1.5rem;
+}
+#home h2{
+    color: yellow; 
+    text-transform: uppercase; 
+    font-size: 1.9rem; 
+    margin-bottom: 20px;
+}
+#home img{
+    height: 450px;
+    width: auto;
+    float: right;
+}
+#home .author_text{
+    text-align: left; 
+    margin-top: 200px;
+}
+/*--about me part--*/
+#about{
+    background-color: f3e1e1cc;
+}
+
+#progress h5{
+    text-align: left;
+    color: rgb(70, 69, 69);
+    text-transform: uppercase;
+}
+.progressbar {
+    height: 10px;
+    width: 100%;
+    background-color: #c1bcbc;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+.progress-achieve{
+    height: 10px;
+    width: 100%;
+    background-color: yellow;
+    border-radius: 5px;
+}
+#progress .col-33{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/*-- services section --*/
+#services {
+    background-image: url('../img/fireflies.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#services .content{
+    background-color: #ffffff2b;
+    border-radius: 5px;
+    padding: 55px;
+}
+#services h3{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: white;
+    text-transform: uppercase;
+}
+#services p{
+    color: white;
+    font-size: .94rem;
+}
+#services .content:hover{
+    background-color: #000203c0;
+}
+/*-- review --*/
+#review {
+    background-image: url('../img/review.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#review h3{
+    font-size: 2rem;
+    color: white;
+    margin: 25px auto 30px;
+}
+#review h5{
+    font-size: 1rem;
+    color: white;
+}
+/*-- contact section --*/
+#contact {
+    background-image: url('../img/contactMe.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#contact h1{
+    color: white;
+    margin-bottom: 25px;
+}
+#contact form input, #contact form textarea{
+    width: 100%;
+    background-color: transparent;
+    font-size: 1rem;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: black;
+}
+#contact textarea{
+    height: 150px;
+}
+#contact button{
+    border-radius:5px; 
+    padding:15px 35px; 
+    background-color: #216fe2;
+}
+#address{
+    margin: 50px auto 25px;
+}
+#address p{
+    font-size: .9rem;
+    color: white;
+    margin-top: 15px;
+}
+
+/*--footer part--*/
+footer{
+    overflow: hidden;
+    background-color: #f5f5f5;
+    padding: 30px 0px;
+}
+#copy-right{
+    float: left;
+    color: rgb(73, 73, 73);
+    margin-top: 10px;
+}
+#copy-right a{
+    text-decoration: none;
+    color: rgb(19, 25, 230) !important;
+}
+#social{
+    float: right;
+}
+#social ul{
+    list-style: none;
+}
+#social ul li{
+    float: left;
+    margin: auto 15px;
+    height: 20px;
+    width: 25px;
+    border: 2px solid rgb(73, 73, 73);
+    padding-top: 5px;
+    border-radius: 50%;
+    text-align: center;
+}
+#social ul li:last-child{
+    margin-right: 0px;
+}
+#social ul li a i {
+    font-size: .9rem;
+    color: rgb(73, 73, 73);
+}
+#upper{
+    height: 30px;
+    width: 40px;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    background-color: gray;
+    text-align: center;
+    padding-top: 10px;
+    display: none;
+}
+#upper i{
+    font-size: 1rem;
+    color: white;
+}
+
+/*-- =========== Device View ========== ----------*/
+
+@media(max-width:1100px){
+    .container{
+        width: 100%;
+    }
+}
+
+@media(max-width:576px){
+    .col-25, .col-33, .col-50{
+        width: 100%;
+    }
+    /*--- ===== header part ===== ---*/
+    header{
+        background-color: #040404d6;
+    }
+    .company{
+        padding-left: 15px;
+    }
+    .company img{
+        height: 51px;
+		width: 55px;
+		border-radius: 2rem;
+    }
+    .company h2{
+        font-size: 1.7rem;
+    }
+    /*--- ===== main manu part ===== ---*/
+    #mobile-icon{
+        display: block;
+        position: absolute;
+        top: 35px;
+        right: 15px;
+    }
+    #main-manu ul li{
+        float: none;
+    }
+    #main-manu ul li a{
+        display: block;
+    }
+    #main-manu ul li a:hover, .active a{
+        background-color: #062446b3;
+        color: #dccc0dd9 !important;
+    }
+    #main-manu{
+        width: 100%;
+        padding-right: 0;
+        margin-top: 0;
+    }
+    #main-manu ul{
+        display: none;
+    }
+    /*--- ===== Home part ===== ---*/
+    #home .col-50{
+        width: 50%;
+    }
+    #home img{
+        height: 175px;
+    }
+    #home .author_text{
+        margin-top: 25px;
+    }
+    #home p{
+        font-size: .75rem;
+    }
+    #home h6{
+        font-size: .9rem;
+    }
+    #home h2{
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+    }
+    #home .btn{
+        font-size: .75rem;
+        padding: 7px 15px;
+    }
+    /*--- ===== Review part ===== ---*/
+    #review .col-25{
+        width: 50%;
+    }
+    #review .content{
+        margin-top: 30px;
+    }
+    /*--- ===== Footer part ===== ---*/
+    #copy-right, #social{
+        float: none;
+        text-align: center;
+    }
+    #social ul{
+        margin-left: 25%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

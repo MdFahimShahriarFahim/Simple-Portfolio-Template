@@ -1,0 +1,125 @@
+/* === Global CSS === */
+
+section{
+    padding-top: 100px;
+    padding-bottom: 50px;
+	overflow:hidden;
+}
+
+.bg-transparent-black{
+    background-color: #0e0e0e6e !important;
+}
+
+/* === Theme CSS === */
+
+/*--header part--*/
+header .navbar{
+    background-color: #000000b0;
+}
+header a{
+    color: white;
+}
+
+/*-- header part mainManu --*/
+#mainManu .active{
+    background-color: black;
+}
+
+/*-- home section --*/
+#home {
+    background-image: url('../img/bgimg.jpg');
+    background-repeat: no-repeat;
+    padding-bottom: 0px;
+}
+#home p{
+    text-align: left;
+    font-size: 1.2rem; 
+}
+#home h6{
+    color: white;
+    text-align: left;
+    font-size: 1.5rem;
+}
+#home h2{
+    font-size: 1.9rem; 
+    margin-bottom: 20px;
+}
+#home .btn{
+    border-radius: 25px;
+}
+#home .author_text{
+    text-align: left; 
+    margin-top: 200px;
+}
+
+
+/*-- Services part --*/
+#services{
+    background-image: url(../img/fireflies.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#services .card{
+    background-color: #8080806e;
+    color: white;
+}
+#services .card:hover{
+    background-color: #000203c0;
+}
+
+/*-- project part --*/
+#project img {
+    height: 200px;
+}
+#project .card-img-overlay {
+    top: auto;
+    display: none;
+}
+#project .card:hover .card-img-overlay {
+    display: block;
+}
+
+/*-- review part --*/
+
+#review{
+    background-image: url(../img/bgim.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*-- contact part --*/
+
+#contact{
+    background-image: url(../img/contactMe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#contact input{
+	background-color: transparent;
+}
+#contact textarea{
+	background-color: transparent;
+}
+
+textarea.form-control {
+    height: 145px;
+}
+
+/*-- footer part --*/
+#social a{
+    width: 40px;
+    height: 40px;
+}
+#upper{
+    width: 40px;
+    height: 35px;
+    left: auto;
+    bottom: 3px;
+    right: 10px;
+}
+
+
+
+
